@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Reservation System</title>
+    <link rel = "stylesheet" href="css/style.css">
+    <link rel = "stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="images/logo.jpg"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-2">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reservations<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="createReservation.html">New Reservation</a> </li>
+                            <li class="divider"></li>
+                            <li><a href="editReservation.html">Edit Reservation</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+                    </li>
+                </ul>
+                <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+                    <form class="navbar-form navbar-right form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="Email">Email</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="Password">Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Password" required />
+                        </div>
+                        <button type="submit" class="btn btn-success" id="ownerLogin">Sign in</button>
+                    </form>
+                </div>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    <div id="carousel" class="row">
+    <section class="section-white">
+        <div class="container">
+
+            <div id="image_carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#image_carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#image_carousel" data-slide-to="1"></li>
+                    <li data-target="#image_carousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/iStock_hearthTable.jpg" alt="table">
+                        <div class="carousel-caption">
+                            <h2>Great Ambiance</h2>
+                        </div>
+                    </div>
+                    <div class="item slides">
+                        <img src="images/food.jpg" alt="food">
+                        <div class="carousel-caption">
+                            <h2>Amazing food!</h2>
+                        </div>
+                    </div>
+                    <div class="item slides">
+                        <img src="images/rest.jpg" alt="rest">
+                        <div class="carousel-caption">
+                            <h2>Wonderful time</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#image_carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#image_carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    </div>
+
+
+
+
+</body>
+</html>

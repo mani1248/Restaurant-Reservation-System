@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Reservation</title>
+    <link rel = "stylesheet" href="css/style.css">
+    <link rel = "stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<div class="collapse navbar-collapse" id="navbar-collapse-2">
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="ownerHome.html">Home</a></li>
+        <li><a href="ownerAbout.html">About</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reservations<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="viewReservations.html">View Reservations</a> </li>
+                <li class="divider"></li>
+                <li><a href="ownerCreateReservations.html">New Reservation</a> </li>
+                <li class="divider"></li>
+                <li><a href="ownerEditReservations.html">Edit Reservation</a> </li>
+            </ul>
+        </li>
+        <li><a href="ownerContact.html">Contact</a></li>
+        <li>
+            <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+        </li>
+    </ul>
+    <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+        <form class="navbar-form navbar-right form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="Password">Password</label>
+                <input type="password" class="form-control" id="Password" placeholder="Password" required />
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+        </form>
+    </div>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+<tbody id="tables" class="container">
+    <legend>Reservations History</legend>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Size</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>john@apple.com</td>
+                    <td>555555555</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Sam</td>
+                    <td>sam@apple.com</td>
+                    <td>4444444444</td>
+                    <td></td>
+                    <td></td>
+                    <td>6</td>
+                    <td>Inactive</td>
+                </tr>
+            </tbody>
+         </table>
+</div>
+
+
+</body>
+</html>
